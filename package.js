@@ -1,7 +1,7 @@
 Package.describe({
-  summary: " \* Fill me in! *\ ",
-  version: "1.0.0",
-  git: " \* Fill me in! *\ "
+  summary: "Helper functions for Meteor",
+  version: "0.1.0",
+  git: "https://github.com/chicagogrooves/deanius:at-at"
 });
 
 Package.onUse(function(api) {
