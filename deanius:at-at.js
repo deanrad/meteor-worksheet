@@ -1,4 +1,4 @@
-// TODO replace with CoffeeScript source 
+// TODO replace with CoffeeScript source
 var __slice = [].slice;
 
 Meteor.atServer = function(fn) {
@@ -12,6 +12,14 @@ Meteor.atClient = function(fn) {
     return fn.call();
   }
 };
+
+Meteor.atCordova = function(fn) {
+  if (Meteor.isCordova) {
+    return fn.call();
+  }
+};
+
+Meteor.atDevice = Meteor.atCordova;
 
 Meteor.atClient(function() {
   return Meteor.subscribe = (function(subscribe) {
