@@ -15,15 +15,15 @@ Meteor.atClient = function(fn) {
   }
 };
 
+Meteor.atBrowser = function(fn) {
+  if (Meteor.isClient && !Meteor.isCordova) {
+    return fn.call();
+  }
+};
+
 Meteor.atCordova = function(fn) {
   if (Meteor.isClient && Meteor.isCordova) {
     return fn.call();
   }
 };
 Meteor.atDevice = Meteor.atCordova;
-
-Meteor.atBrowser = function(fn) {
-  if (Meteor.isClient && !Meteor.isCordova) {
-    return fn.call();
-  }
-};

@@ -1,11 +1,11 @@
 Package.describe({
   summary: "Helper functions for Meteor",
   version: "0.2.0",
-  git: "https://github.com/chicagogrooves/deanius:at-at"
+  git: "https://github.com/chicagogrooves/deanius-at-at"
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('METEOR-CORE@0.9.0-rc12');
+  api.versionsFrom('METEOR@0.9.0');
   api.addFiles('deanius:at-at.js');
 });
 
