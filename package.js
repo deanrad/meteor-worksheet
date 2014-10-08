@@ -1,6 +1,6 @@
 Package.describe({
-  summary: "Helper functions for Meteor",
-  version: "0.2.1",
+  summary: "Schedules execution of functions At-Client, At-Server, At-Device.",
+  version: "0.2.2",
   git: "https://github.com/chicagogrooves/deanius-at-at"
 });
 
