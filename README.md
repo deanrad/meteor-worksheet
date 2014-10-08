@@ -31,5 +31,5 @@ Meteor.atDevice(fn)
 
 * `Meteor.atBrowser( _.once(fn) )`  - run a function in the browser only once 
 * `Meteor.atServer( _.throttle(fn, 1000) )`  - run a function on the server no more than once per second
-* `Meteor.atServer( _.defer(fn) ) - run a function once the call-stack has cleared *a la setTimeout(fn, 0)*
+* `Meteor.atServer( _.defer(fn) )` - run a function once the call-stack has cleared *a la setTimeout(fn, 0)*
 * Any function on the [Underscore](http://underscorejs.org) doc site could be used, the key point being that by taking functions, your flexibility of use is improved.
