@@ -2,11 +2,19 @@
   "dependencies": [
     [
       "meteor",
-      "1.1.0"
+      "1.1.2"
+    ],
+    [
+      "reactive-var",
+      "1.0.3"
+    ],
+    [
+      "tracker",
+      "1.0.3"
     ],
     [
       "underscore",
-      "1.0.0"
+      "1.0.1"
     ]
   ],
   "pluginDependencies": [],
