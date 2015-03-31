@@ -8,9 +8,6 @@ describe 'property tests', ->
       a2: 5
       subtotal: ->
         @a1 + @a2
-      total: ->
-        console.log 'updating total'
-        @taxRate * @subtotal
     )
 
   describe 'value properties', ->
@@ -41,11 +38,11 @@ describe 'property tests', ->
       Tracker.flush()
       assert.equal origTotal+1, wks.subtotal
 
-    it 'are updated in the next event loop tick (defer)', ->
+    it 'are in an unknown state when Meteor.defer runs', ->
       origTotal = wks.subtotal
       wks.a1 +=1
       Meteor.defer ->
-        assert.equal origTotal+1, wks.subtotal
+        expect(wks.subtotal - origTotal).to.be.below(2)
 
     it 'are updated in the next event loop tick (setTimeout 0)', ->
       origTotal = wks.subtotal
