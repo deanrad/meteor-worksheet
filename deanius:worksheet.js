@@ -20,6 +20,9 @@ function defineComputedProperty (o, name, fn) {
     return Object.defineProperty(o, name, {
         get: function() {
             return myvar.get();
+        },
+        set: function(x) {
+          throw new Error("Formula field is read-only.");
         }
     });
 };
