@@ -1,15 +1,15 @@
 Package.describe({
   name: "deanius:worksheet",
   summary: "Set up an object with a list of raw values and formulae, reactively bound like in a spreadsheet.",
-  version: "1.0.0",
-  git: "https://github.com/chicagogrooves/deanius-worksheet",
+  version: "1.0.1",
+  git: "https://github.com/deanius/meteor-worksheet",
   documentation: "README.md"
 });
 
 Package.onUse(function (api) {
   api.versionsFrom("METEOR@1.0");
   api.use(["tracker", "reactive-var", "underscore"]);
-  api.addFiles("deanius:worksheet.js", ["client", "server"]);
+  api.addFiles("worksheet.js", ["client", "server"]);
   api.export("worksheet", ["client", "server"]);
 });
 

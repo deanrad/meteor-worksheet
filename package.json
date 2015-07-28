@@ -1,15 +1,15 @@
 {
-  "name": "deanius-worksheet",
-  "version": "1.0.0",
+  "name": "meteor-worksheet",
+  "version": "1.0.1",
   "description": "Set up an object with a list of raw values and formulae, reactively bound like in a spreadsheet.",
-  "main": "deanius:worksheet.js",
+  "main": "worksheet.js",
   "scripts": {
     "start": "meteor test-packages --driver-package respondly:test-reporter ./",
     "test": "meteor test-packages --velocity --driver-package respondly:test-reporter ./"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chicagogrooves/deanius-worksheet.git"
+    "url": "https://github.com/deanius/meteor-worksheet.git"
   },
   "keywords": [
     "meteor",
@@ -19,7 +19,7 @@
   "author": "Dean Radcliffe",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chicagogrooves/deanius-worksheet/issues"
+    "url": "https://github.com/deanius/meteor-worksheet/issues"
   },
-  "homepage": "https://github.com/chicagogrooves/deanius-worksheet"
+  "homepage": "https://github.com/deanius/meteor-worksheet"
 }
